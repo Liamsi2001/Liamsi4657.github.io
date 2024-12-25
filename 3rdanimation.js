@@ -419,41 +419,41 @@ var buttons = []; // list of the buttons
 var outerPolygon = []; // outer polygon with vertices given in counterclockwise order
 
 function setup() {
-  createCanvas(windowWidth, 600); // Make the canvas smaller to ensure buttons are visible
+  createCanvas(windowWidth, 600); 
   fill("black");
   textSize(20);
 
   // Clear button
   clearButton = createButton("Clear");
-  clearButton.position(30, 85);
+  clearButton.position(30, 205);
   clearButton.mousePressed(resetpoints);
   buttons.push(clearButton);
 
   // Obstacle button
   obButton = createButton("New obstacle");
-  obButton.position(30, 115);
+  obButton.position(30, 235);
   obButton.mousePressed(createObstacle);
   buttons.push(obButton);
 
   // start button
   startButton = createButton("START");
-  startButton.position(30, 145);
+  startButton.position(30, 265);
   startButton.mousePressed(setStart);
   buttons.push(startButton);
 
   // end button
   endButton = createButton("END");
-  endButton.position(30, 175);
+  endButton.position(30, 295);
   endButton.mousePressed(setEnd);
   buttons.push(endButton);
 
   vgButton = createButton("ANCHOR");
-  vgButton.position(30, 205);
+  vgButton.position(30, 325);
   vgButton.mousePressed(setAnchor);
   buttons.push(vgButton);
 
   spButton = createButton("TETHER");
-  spButton.position(30, 235);
+  spButton.position(30, 355);
   spButton.mousePressed(setTether);
   buttons.push(spButton);
 
